@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+If a function has no context within itself, it has to look outside of itself. Once it finds the context mentioned within itself, it finds closure. 
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,9 +64,13 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
+a. Where is closure used in this code? How can you tell? 
+The function calls on the variables within itself and also outside of itself to be able to return what it's been asked to return. 
+Because if it didn't, you wouldn't be able to call a "dansRoll" or "zoesRoll".
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+It will always say "Dan rolled a" and the number will always be different. 
 c. What is the lexical scope of `newRoll`? 
+It can only be accessed inside of it's function, not from outside.
 
 
 ### Task 3 - Stretch Goals
